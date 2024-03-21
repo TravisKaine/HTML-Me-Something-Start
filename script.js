@@ -2,11 +2,12 @@ const track = document.getElementById("image-track");
 
 const handleOnDown = e => track.dataset.mouseDownAt = e.clientX;
 
+
 const handleOnUp = () => {
   track.dataset.mouseDownAt = "0";  
   track.dataset.prevPercentage = track.dataset.percentage;
 }
-
+  
 const handleOnMove = e => {
   if(track.dataset.mouseDownAt === "0") return;
   
@@ -104,6 +105,7 @@ const travisButton = document.querySelector('.logo-text');
 
 // Add click event listener to the Travis button
 travisButton.addEventListener('click', zoomOutToPhotoWheel);
+
 
 
 //touch 
