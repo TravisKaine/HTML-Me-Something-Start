@@ -19,7 +19,7 @@ const handleOnMove = e => {
         nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 0), -100);
   
   track.dataset.percentage = nextPercentage;
-  
+
   track.animate({
     transform: `translate(${nextPercentage}%, -50%)`
   }, { duration: 1200, fill: "forwards" });
@@ -97,6 +97,9 @@ function zoomOutToPhotoWheel() {
 
   // Show the photo wheel
   const photoWheel = document.getElementById('photo-wheel');
+
+
+
   photoWheel.style.display = 'block';
 }
 
